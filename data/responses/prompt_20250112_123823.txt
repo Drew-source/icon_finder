@@ -1,0 +1,100 @@
+# Task Prompt Template
+
+## Current Task
+Find the following target: google chrome
+
+## Icon/Element Description
+When looking for specific elements:
+- Chrome: circular icon with red, yellow, green, blue segments
+- Chrome Search Bar: rectangular input field at top of window
+- Stremio: purple/blue triangular play button icon
+- Windows apps: Look for distinctive logos
+- File Explorer: yellow folder icon
+- VS Code: blue square icon
+- Terminal: black rectangle with command prompt
+
+## Search Instructions
+1. Focus on common locations in order:
+   - Taskbar (Y ≈ 1415)
+   - Desktop icons
+   - Open windows
+   - System tray (bottom-right corner)
+
+2. For specific elements:
+   - Application icons: Look in taskbar first
+   - Window elements (like search bars): Look within the active window
+   - Menu items: Check top of windows (Y ≈ 75)
+
+## Important Reminders
+- Use the red grid overlay for precise measurements
+- Validate all measurements using grid lines
+- If unsure, explain what you're seeing
+- Provide exact coordinates based on grid lines 
+
+# Coordinate Reading Guide
+
+## Fundamental Concept
+The screen uses a coordinate system where:
+- X increases from left to right (0 to 2560)
+- Y increases from top to bottom (0 to 1440)
+- Origin (0,0) is at top-left corner
+- Grid lines are spaced 100 pixels apart
+
+## Precise Coordinate Reading
+1. Find nearest grid lines:
+   - Count major grid lines (100px)
+   - Estimate minor divisions (25px)
+   - Use crosshair markers as reference
+
+2. Common Ranges:
+   - Taskbar: Y ≈ 1415
+   - Window title bars: Y ≈ 75
+   - Desktop icons: X < 500
+   - System tray: X > 2000
+
+## Auto-Correction Strategy
+1. When target is missed:
+   - Note current click position (red crosshair)
+   - Compare to previous attempts (yellow crosshairs)
+   - Determine direction and distance needed
+
+2. Movement Guidelines:
+   - Far (>200px): Move 200-300 pixels
+   - Medium (100-200px): Move 100-150 pixels
+   - Close (50-100px): Move 50-75 pixels
+   - Very close (<50px): Move 10-20 pixels
+
+3. Direction Analysis:
+   - If too far right: Decrease X
+   - If too far left: Increase X
+   - If too far down: Decrease Y
+   - If too far up: Increase Y
+
+## Sequence Context
+1. Consider target state:
+   - Is window/app already open?
+   - Are we clicking same region?
+   - Has window position changed?
+
+2. Adjust for changes:
+   - Window movements
+   - New elements appearing
+   - UI state changes
+
+## Validation Method
+1. Before clicking:
+   - Check coordinates are within screen
+   - Verify against common ranges
+   - Consider sequence context
+
+2. After clicking:
+   - Verify visual changes
+   - Check for success indicators
+   - Prepare for next step
+
+## Common Mistakes to Avoid
+1. Being too conservative in corrections
+2. Ignoring previous attempt patterns
+3. Not considering sequence context
+4. Missing common element locations
+5. Forgetting to verify success 
